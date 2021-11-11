@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 50px;
+  font-family: 'Poppins' ,sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-list{
+  padding: 24px;
   display: flex;
-  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.movie-container{
+  width: 340px;
+  
+}
+.movie-specs{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.movie-poster{
+  height: 500px;
+  width: 340px;
+  object-fit: cover;
+  background-color: teal;
+}
+.movie-rating{
+  font-size: 18px;
+  font-weight: 400px ;
+}
+.movie-name{
+  font-size: 24px;
+  margin: 0px;
+}
+.likes-dislikes{
+  font-size: 20px;
+}
+.counter-container{
+  display: flex;
+  gap: 10px;
+}
+.movie-show-button{
+  /* margin-bottom: 10px; */
+  font-size: 1.5rem;
+}
+.add-movie-form{
+  display: flex;
+  flex-direction: column ;
+  gap: 10px;
+  margin: 1rem;
+}
+.Not-Found{
+  text-align:center;
+  font-size:56px;
+  margin:0px;
+  
+}
+.movie-detial-container{
+  max-width: 50rem;
+  padding: 1rem;
+}
+:root{
+  font-size: 16px;
+}
+.game-box{
+  height: 8rem;
+  width: 8rem;
+  color:black;
+  background-color: white;
+  font-size: 7rem;
+  display:flex;
+  align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ border: 1px solid black;
+}
+.board{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  width: min-content;
+  /* background-color: pink; */
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .full-game{
+   display:flex;
+   flex-direction: column;
+    align-items: center;
+    /* background-color: pink; */
+    min-height: 100vh;
+    justify-content: center;
+    gap:1rem;
+ }
